@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090d1b">
+<title>SHRARH STORE | شحن ألعاب وحسابات</title>
+<style>
+:root{--bg:#090d1b;--panel:#111a2d;--panel2:#17233a;--text:#f4f7ff;--muted:#aab6cc;--purple:#8b5cf6;--blue:#38bdf8;--line:#26344e}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0%,#20204b 0,transparent 30%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#090d1beF;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:900;letter-spacing:1px;font-size:1.15rem}.brand span{color:var(--blue)}
+nav{display:flex;gap:20px;color:var(--muted);font-size:.94rem}nav a:hover{color:white}
+.cart-btn,.primary,.secondary{border:0;border-radius:13px;padding:11px 16px;font-weight:800;cursor:pointer}
+.cart-btn,.primary{background:linear-gradient(120deg,var(--purple),#4f46e5);color:white}.cart-btn b{background:#fff;color:#15132a;border-radius:20px;padding:2px 7px;margin-right:5px}
+.hero{padding:64px 0 44px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:30px}
+.eyebrow{color:var(--blue);font-weight:800}.hero h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.12;margin:12px 0}.hero h1 em{font-style:normal;color:#a78bfa}.hero p{color:var(--muted);line-height:1.9;max-width:600px}
+.hero-card{background:linear-gradient(145deg,#1b2850,#17152f);border:1px solid #34446b;border-radius:28px;padding:28px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 70px #0006}
+.orb{font-size:4rem}.hero-card strong{font-size:1.4rem}.hero-card small{color:#c3cde0}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}
+section{padding:28px 0 48px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:20px}.section-head h2{margin:0;font-size:1.7rem}.section-head p{margin:5px 0 0;color:var(--muted)}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}.filter{background:var(--panel);color:var(--muted);border:1px solid var(--line);padding:9px 14px;border-radius:30px;cursor:pointer}.filter.active{background:#38276a;color:white;border-color:#8064db}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{background:linear-gradient(160deg,var(--panel),#0e1526);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.thumb{height:145px;background:linear-gradient(135deg,#29366c,#30204f);display:grid;place-items:center;font-size:3.3rem}.product-body{padding:16px}.tag{display:inline-block;background:#233352;color:#9ddcff;padding:5px 9px;border-radius:30px;font-size:.76rem;font-weight:700}
+.product h3{margin:10px 0 6px}.desc{color:var(--muted);font-size:.9rem;line-height:1.7;min-height:48px}.product-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}.price{font-weight:900;color:#c4b5fd}.add{background:#25385b;color:white;border:1px solid #40577e;border-radius:10px;padding:9px 12px;cursor:pointer;font-weight:800}.add:hover{background:#4f46e5}
+.notice{border:1px solid #5b4a26;background:#2a2417;color:#f6dfa3;padding:14px 16px;border-radius:14px;line-height:1.8;font-size:.9rem}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);line-height:1.8}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.overlay{position:fixed;inset:0;background:#0009;z-index:10;display:none}.drawer{position:absolute;left:0;top:0;height:100%;width:min(420px,92vw);background:#10192b;border-right:1px solid var(--line);padding:22px;overflow:auto}.drawer-top{display:flex;justify-content:space-between;align-items:center}.close{background:transparent;color:white;border:0;font-size:1.6rem;cursor:pointer}.cart-item{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:14px 0}.cart-item small{display:block;color:var(--muted)}.qty{display:flex;gap:7px;align-items:center}.qty button{background:#26395d;color:white;border:0;border-radius:7px;padding:4px 9px}
+input,textarea{width:100%;background:#0a1222;border:1px solid var(--line);border-radius:10px;color:white;padding:12px;font:inherit;margin:7px 0 12px}
+label{font-size:.9rem;color:#cbd5e1}.empty{color:var(--muted);text-align:center;padding:30px 0}
+@media(max-width:760px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:42px}.hero-card{min-height:180px}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.nav{height:64px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><span>SHRARH</span> STORE</a>
+  <nav><a href="#home">الرئيسية</a><a href="#products">المنتجات</a><a href="#about">عن المتجر</a></nav>
+  <button class="cart-btn" onclick="openCart()">السلة <b id="cartCount">0</b></button>
+</div></header>
+<main>
+<div class="wrap hero" id="home">
+  <div><div class="eyebrow">LEVEL UP YOUR GAME</div>
+    <h1>كل احتياجات ألعابك<br><em>في مكان واحد.</em></h1>
+    <p>شحن ألعاب وخيارات رقمية لعشاق الألعاب. تصفّح المنتجات، أضف طلبك للسلة، وأرسل تفاصيل الطلب مباشرة للمتجر.</p>
+    <div class="actions"><a class="primary" href="#products">تصفح المنتجات</a><button class="secondary" onclick="openCart()">عرض السلة</button></div>
+  </div>
+  <div class="hero-card"><div class="orb">🎮</div><div><strong>SHRARH STORE</strong><br><small>متجرك للخدمات الرقمية والألعاب</small></div></div>
+</div>
+<section class="wrap" id="products">
+  <div class="section-head"><div><h2>تسوّق الآن</h2><p>اختر القسم المناسب ليك</p></div></div>
+  <div class="filters">
+    <button class="filter active" data-filter="all">الكل</button>
+    <button class="filter" data-filter="topup">شحن ألعاب</button>
+    <button class="filter" data-filter="account">حسابات ألعاب</button>
+  </div>
+  <div class="grid" id="productGrid"></div>
+</section>
+<section class="wrap" id="about">
+  <div class="notice"><strong>تنبيه مهم:</strong> المنتجات والأسعار الظاهرة حالياً أمثلة قابلة للتعديل وليست عروضاً مؤكدة. لا تشارك كلمة مرورك أو رموز التحقق. لا تُدرج إلا الحسابات التي تملك حق بيعها ويسمح مزوّد اللعبة بنقلها.</div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><strong style="color:white">SHRARH STORE</strong><br>خدمات الألعاب الرقمية.</div><div>© <span id="year"></span> SHRARH STORE<br><span id="contactHint">سيتم تفعيل خدمة العملاء بعد إعداد رقم عمل آمن</span></div></div></footer>
+
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeCart()"><div class="drawer">
+  <div class="drawer-top"><h2>سلة الطلبات</h2><button class="close" onclick="closeCart()">×</button></div>
+  <div id="cartItems"></div>
+  <h3 id="total">الإجمالي: 0</h3>
+  <label for="customerName">اسمك</label><input id="customerName" placeholder="اكتب اسمك">
+  <label for="customerNote">ملاحظات الطلب (اختياري)</label><textarea id="customerNote" rows="3" placeholder="اكتب تفاصيل الشحن المطلوبة فقط، دون كلمات مرور"></textarea>
+  <button class="primary" style="width:100%" onclick="checkout()">إرسال الطلب عبر واتساب</button>
+  <p style="color:var(--muted);font-size:.8rem;line-height:1.7">لن يطلب المتجر كلمة مرورك أو رمز التحقق. أكمل الدفع والتأكيد مع المتجر عبر قناة موثوقة.</p>
+</div></div>
+<script src="script.js"></script>
+</body></html>
